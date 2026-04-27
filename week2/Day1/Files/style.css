@@ -1,0 +1,153 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #888;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Attempts */
+.attempts {
+    background: #f8f9fa;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+}
+
+.attempts p {
+    color: #333;
+    font-size: 16px;
+}
+
+.attempts span {
+    color: #007bff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.input-section input:focus {
+    border-color: #007bff;
+}
+
+.input-section input:disabled {
+    background: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Search Button */
+#searchBtn {
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: auto;
+}
+
+#searchBtn:hover:not(:disabled) {
+    background: #0056b3;
+}
+
+#searchBtn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Message */
+#message {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0;
+    min-height: 30px;
+}
+
+.too-ahead {
+    color: #dc3545;
+}
+
+.too-behind {
+    color: #007bff;
+}
+
+.found {
+    color: #28a745;
+}
+
+.game-over {
+    color: #dc3545;
+}
+
+/* Play Again Button */
+#playAgainBtn {
+    padding: 12px 30px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: auto;
+    margin-top: 10px;
+}
+
+#playAgainBtn:hover {
+    background: #218838;
+}

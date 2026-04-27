@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🗺️ Treasure Hunt</h1>
+        <p class="subtitle">Find the hidden treasure between 1 and 100!</p>
+
+        <div class="attempts">
+            <p>Attempts Remaining: <span id="attempts">7</span></p>
+        </div>
+
+        <div class="input-section">
+            <input type="number" id="guess" placeholder="Enter your guess" min="1" max="100">
+            <button id="searchBtn" onclick="checkGuess()">🔍 Search</button>
+        </div>
+
+        <p id="message"></p>
+
+        <button id="playAgainBtn" onclick="resetGame()" style="display:none">🔄 Play Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
