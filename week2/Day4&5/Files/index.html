@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Home - Mini Store</title>
+</head>
+<body>
+    <nav>
+        <h1>MiniStore</h1>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+            <a href="#" onclick="handleLogout()">Logout</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 style="text-align: center; margin-top: 20px;">Our Products</h2>
+        <div id="product-list" class="product-grid">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Load products when page opens
+        window.onload = displayProducts;
+    </script>
+</body>
+</html>

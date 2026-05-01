@@ -1,0 +1,21 @@
+<!-- cart.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Cart</title>
+</head>
+<body>
+    <nav><h1>My Cart</h1><div class="nav-links"><a href="index.html">Continue Shopping</a></div></nav>
+    <div class="container">
+        <div id="cart-items-container"></div>
+        <div style="text-align: right; margin-top: 20px;">
+            <h3>Total: $<span id="cart-total">0</span></h3>
+            <button style="width: 200px;" onclick="location.href='checkout.html'">Proceed to Checkout</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script>window.onload = displayCart;</script>
+</body>
+</html>
